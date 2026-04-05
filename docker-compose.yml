@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:5.0
+    container_name: course-prerequisite-db
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: course-prerequisite-db
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:

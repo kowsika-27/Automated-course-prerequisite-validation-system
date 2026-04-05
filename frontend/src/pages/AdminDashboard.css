@@ -1,0 +1,228 @@
+/* ================= ADMIN DASHBOARD ================= */
+
+.admin-dashboard{
+  max-width:1200px;
+  margin:20px auto;
+  padding:20px;
+  background:#f4f6ff;
+  border-radius:12px;
+}
+
+/* ================= TABS ================= */
+
+.tabs{
+  display:flex;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  margin-bottom:20px;
+  box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.tabs button{
+  flex:1;
+  padding:14px;
+  border:none;
+  background:#f1f1f1;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.tabs button.active{
+  background:#ff9800;
+  color:white;
+}
+
+.tabs button:hover{
+  background:#e6e6e6;
+}
+
+/* ================= CONTENT ================= */
+
+.tab-content{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ================= FORM ================= */
+
+.tab-content form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.tab-content input,
+.tab-content textarea{
+  width:100%;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ddd;
+  font-size:14px;
+}
+
+.tab-content textarea{
+  min-height:120px;
+}
+
+.tab-content button[type="submit"]{
+  padding:12px;
+  background:#4CAF50;
+  border:none;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.tab-content button[type="submit"]:hover{
+  background:#409444;
+}
+
+/* ================= ANNOUNCEMENT SECTION ================= */
+
+.tab-content h3{
+  margin-top:25px;
+  margin-bottom:10px;
+}
+
+/* announcement card */
+
+.tab-content .announcement-item{
+  background:white;
+  padding:18px;
+  border-radius:10px;
+  margin-top:15px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.08);
+  border-left:5px solid #6c63ff;
+}
+
+.tab-content .announcement-item strong{
+  font-size:17px;
+  color:#333;
+}
+
+.tab-content .announcement-item p{
+  margin:8px 0;
+  color:#555;
+}
+
+/* announcement buttons alignment */
+
+.announcement-actions{
+  margin-top:10px;
+  display:flex;
+  gap:8px;
+}
+
+/* ================= NORMAL EDIT BUTTON ================= */
+
+.edit-btn{
+  background-color:#ffa500;
+  border:none;
+  color:white;
+  padding:6px 12px;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:13px;
+}
+
+.edit-btn:hover{
+  background:#ff8c00;
+}
+
+/* ================= NORMAL DELETE BUTTON ================= */
+
+.delete-btn{
+  background:#ff4d4d;
+  border:none;
+  color:white;
+  padding:6px 12px;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:13px;
+}
+
+.delete-btn:hover{
+  background:#ff1a1a;
+}
+
+/* ================= RECENTLY ADDED COURSES ================= */
+
+.tab-content h2 + div{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:20px;
+  margin-top:20px;
+}
+
+/* course card */
+
+.tab-content h2 + div > div{
+  background:white;
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  border-top:4px solid #6c63ff;
+  transition:0.3s;
+}
+
+.tab-content h2 + div > div:hover{
+  transform:translateY(-5px);
+}
+
+/* ================= STATS ================= */
+
+.stats-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  margin-bottom:30px;
+}
+
+.stat-card{
+  background:#f8f9ff;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+.stat-card h3{
+  font-size:14px;
+  color:#666;
+}
+
+.stat-card p{
+  font-size:32px;
+  font-weight:bold;
+  color:#6c63ff;
+}
+
+/* ================= SEARCH ================= */
+
+.search-input{
+  width:100%;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:6px;
+}
+
+/* ================= ALERT ================= */
+
+.success-message{
+  background:#d4edda;
+  color:#155724;
+  padding:10px;
+  border-radius:6px;
+  margin-bottom:15px;
+}
+
+.error-message{
+  background:#f8d7da;
+  color:#721c24;
+  padding:10px;
+  border-radius:6px;
+  margin-bottom:15px;
+}

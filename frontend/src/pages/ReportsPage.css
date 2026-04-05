@@ -1,0 +1,111 @@
+.reports-page {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.reports-page h1 {
+  color: #333;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  padding: 10px 15px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tabs button.active {
+  background-color: #FF9800;
+  color: white;
+}
+
+.tab-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.course-selector {
+  margin: 20px 0;
+}
+
+.course-selector select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.report-table,
+.students-table,
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.report-table th,
+.students-table th,
+.logs-table th {
+  background-color: #FF9800;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.report-table td,
+.students-table td,
+.logs-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.report-table tr:hover,
+.students-table tr:hover,
+.logs-table tr:hover {
+  background-color: #f0f0f0;
+}
+
+.report-table .eligible,
+.logs-table .eligible {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.report-table .not-eligible,
+.logs-table .not-eligible {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
