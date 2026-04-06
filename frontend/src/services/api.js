@@ -2,6 +2,9 @@ import axios from 'axios';
 
 const API_BASE = process.env.REACT_APP_API_BASE_URL;
 
+// 🔍 DEBUG LINE (IMPORTANT)
+console.log("API BASE:", API_BASE);
+
 // Auth Service
 export const authService = {
   register: (name, email, password, role) =>
